@@ -174,23 +174,7 @@ fullname.js: lấy dữ liệu trên form, gửi đến api nodered đã làm �
 # Kết Quả
 # <img width="1920" height="1200" alt="Screenshot 2025-10-25 140953" src="https://github.com/user-attachments/assets/9ae861f8-0b2f-4a99-9d02-27cf4cbf0e55" />
 # 2.7. Nhận xét bài làm của mình:
-Trong quá trình thực hiện bài thực hành, em đã tiến hành cài đặt và cấu hình các phần mềm cần thiết để xây dựng một hệ thống web có khả năng kết nối cơ sở dữ liệu và tạo API. Qua các bước triển khai, em đã hiểu rõ hơn về quy trình thiết lập môi trường làm việc, cách vận hành của từng thành phần trong hệ thống, cũng như mối quan hệ giữa frontend và backend trong mô hình ứng dụng web.
-đã hiểu quá trình cài đặt các phần mềm và các thư viện như nào?
-Qua bài làm, em đã nắm được cách cài đặt và cấu hình các công cụ cần thiết như:
-Apache Web Server: biết cách cài đặt, chỉnh sửa file cấu hình httpd.conf, khai báo đường dẫn tài nguyên, đổi cổng truy cập nếu bị trùng (ví dụ cổng 80), và khắc phục lỗi do IIS chiếm cổng.
-Node.js và Node-RED: đã hiểu cách cài Node.js để chạy môi trường JavaScript phía server, cài Node-RED để xây dựng luồng xử lý dữ liệu trực quan.
-SQL Server: biết cách cài đặt, kích hoạt tài khoản đăng nhập sa, tạo cơ sở dữ liệu và các bảng cần thiết, đồng thời hiểu cách mở quyền truy cập từ Node-RED đến SQL Server.
-Biết cách cài đặt các thư viện mở rộng trong Node-RED như node-red-contrib-mssql-plus, node-red-node-mysql, node-red-dashboard,... để mở rộng chức năng và kết nối cơ sở dữ liệu.
-đã hiểu cách sử dụng nodered để tạo api back-end như nào?
-Em đã hiểu cách sử dụng Node-RED để xây dựng API backend thông qua mô hình luồng dữ liệu(flow)gồm nhiều node kết nối với nhau.Cụ thế:
-Sử dụng node http in để định nghĩa điểm truy cập (endpoint) cho API,
-Node function để xử lý logic, đọc tham số từ request và tạo truy vấn SQL,
-Node MSSQL để kết nối và truy vấn dữ liệu từ SQL Server,
-Cuối cùng là node http response để gửi kết quả trả về cho client ở dạng JSON.
-Thông qua quá trình làm, em đã hiểu được cách luồng xử lý dữ liệu di chuyển qua từng node, cách debug lỗi, kiểm tra log và đảm bảo API hoạt động đúng yêu cầu. Ngoài ra, em cũng biết cách triển khai nhiều API khác nhau trong cùng một flow, ví dụ như API đăng nhập, tìm kiếm hoặc thêm dữ liệu.
-đã hiểu cách frond-end tương tác với back-end ra sao? Em đã hiểu rõ mối quan hệ giữa frontend và backend trong mô hình ứng dụng web. Khi người dùng thao tác trên giao diện (frontend), hệ thống sẽ gửi request đến API do Node-RED cung cấp (backend). Backend sẽ xử lý yêu cầu, thực hiện truy vấn SQL, sau đó trả response (dữ liệu JSON) về cho frontend hiển thị kết quả.Qua đó, em hiểu được rằng backend đóng vai trò trung gian xử lý logic và dữ liệu, còn frontend chịu trách nhiệm giao tiếp với người dùng. Việc nắm vững cơ chế này giúp em dễ dàng xây dựng hoặc tích hợp thêm chức năng mới cho hệ thống web sau này.
-Tự đánh giá và rút kinh nghiệm
-Bài làm đã giúp em nằm được toàn bộ quy trình thiết lập một hệ thống web đơn giản từ backend đến frontend.
-Em đã biết cách phân tích lỗi,sửa cấu hình khi gặp các vấn đề như sai thông tin đăng nhập,lỗi kết nối SQL,hay lỗi định nghĩa biến trong Node-RED.
-Tuy nhiên, trong quá trình làm vẫn có lúc gặp lỗi cú pháp (ví dụ lỗi Invalid property expression) và em đã phải tra cứu, thử nghiệm để tìm ra nguyên nhân. Nhờ đó, em rút ra được kinh nghiệm xử lý lỗi và kiểm tra logic luồng dữ liệu cẩn thận hơn.
-Bài tập này giúp em hiểu rằng việc lập trình backend không chỉ là viết code mà còn cần kiến thức về hệ thống, mạng, cơ sở dữ liệu và bảo mật.
+Bài thực hành giúp em hiểu được quy trình thiết lập và vận hành một hệ thống web hoàn chỉnh, từ backend đến frontend. Em đã biết cách phát hiện và khắc phục lỗi như sai thông tin đăng nhập, lỗi kết nối cơ sở dữ liệu, hay lỗi định nghĩa biến trong Node-RED.
+Tuy nhiên, trong quá trình làm việc em vẫn gặp một số lỗi cú pháp (ví dụ: “Invalid property expression”) và phải tra cứu tài liệu, thử nghiệm nhiều lần để tìm ra nguyên nhân. Nhờ đó, em rút ra được kinh nghiệm quý báu trong việc kiểm tra luồng dữ liệu, theo dõi log, và xử lý lỗi cẩn thận hơn.
+
+Tổng kết lại, bài thực hành không chỉ giúp em củng cố kiến thức về lập trình backend mà còn mở rộng hiểu biết về hệ thống, mạng, cơ sở dữ liệu và bảo mật. Đây là nền tảng quan trọng để em có thể phát triển các ứng dụng web phức tạp hơn trong tương lai.
