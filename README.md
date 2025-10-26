@@ -174,6 +174,38 @@ fullname.js: lấy dữ liệu trên form, gửi đến api nodered đã làm �
 # Kết Quả
 # <img width="1920" height="1200" alt="Screenshot 2025-10-25 140953" src="https://github.com/user-attachments/assets/9ae861f8-0b2f-4a99-9d02-27cf4cbf0e55" />
 # 2.7. Nhận xét bài làm của mình:
+Trong quá trình thực hiện bài thực hành, em đã tiến hành cài đặt và cấu hình các phần mềm cần thiết để xây dựng một hệ thống web có khả năng kết nối cơ sở dữ liệu và tạo API. Qua các bước triển khai, em đã hiểu rõ hơn quy trình thiết lập môi trường làm việc, cơ chế hoạt động của từng thành phần trong hệ thống, cũng như mối quan hệ giữa frontend và backend trong mô hình ứng dụng web.
+
+Hiểu biết về quá trình cài đặt và cấu hình phần mềm
+
+Thông qua bài làm, em đã nắm được cách cài đặt và cấu hình các công cụ quan trọng như:
+
+Apache Web Server: Em biết cách cài đặt và chỉnh sửa file cấu hình httpd.conf, thiết lập đường dẫn tài nguyên, thay đổi cổng truy cập khi bị trùng (ví dụ cổng 80), đồng thời khắc phục lỗi do xung đột với IIS.
+
+Node.js và Node-RED: Em đã hiểu cách cài đặt Node.js để chạy môi trường JavaScript phía server và cài Node-RED để xây dựng luồng xử lý dữ liệu trực quan.
+
+SQL Server: Em biết cách cài đặt, kích hoạt tài khoản sa, tạo cơ sở dữ liệu và các bảng cần thiết, đồng thời mở quyền truy cập để Node-RED có thể kết nối đến SQL Server.
+
+Ngoài ra, em cũng đã thực hành cài đặt các thư viện mở rộng trong Node-RED như node-red-contrib-mssql-plus, node-red-node-mysql, node-red-dashboard,… để mở rộng chức năng và tăng khả năng kết nối dữ liệu.
+
+Hiểu cách sử dụng Node-RED để xây dựng API Backend
+
+Em đã nắm được cách sử dụng Node-RED để tạo API backend thông qua mô hình flow (luồng dữ liệu) gồm nhiều node liên kết. Cụ thể:
+
+Node http in dùng để định nghĩa endpoint cho API.
+
+Node function xử lý logic, đọc tham số từ request và tạo truy vấn SQL.
+
+Node MSSQL đảm nhiệm việc kết nối và thực hiện truy vấn với SQL Server.
+
+Node http response trả kết quả về cho client dưới dạng JSON.
+
+Qua thực hành, em hiểu rõ cách dữ liệu di chuyển qua từng node, cách debug lỗi, xem log và kiểm tra phản hồi từ API. Em cũng đã biết cách tạo và triển khai nhiều API khác nhau trong cùng một flow như API đăng nhập, tìm kiếm hay thêm mới dữ liệu.
+
+Hiểu mối quan hệ giữa Frontend và Backend
+
+Em đã nắm rõ cơ chế tương tác giữa frontend và backend trong hệ thống web. Khi người dùng thao tác trên giao diện (frontend), yêu cầu sẽ được gửi đến API (backend) do Node-RED cung cấp. Backend tiếp nhận, xử lý logic, truy vấn dữ liệu từ SQL Server và gửi phản hồi (response) dạng JSON về cho frontend để hiển thị kết quả.
+Qua đó, em hiểu được vai trò trung tâm của backend trong việc xử lý dữ liệu và logic, trong khi frontend là cầu nối tương tác trực tiếp với người dùng. Nắm vững mối quan hệ này giúp em tự tin hơn khi muốn phát triển hoặc mở rộng các chức năng của ứng dụng web.
 Bài thực hành giúp em hiểu được quy trình thiết lập và vận hành một hệ thống web hoàn chỉnh, từ backend đến frontend. Em đã biết cách phát hiện và khắc phục lỗi như sai thông tin đăng nhập, lỗi kết nối cơ sở dữ liệu, hay lỗi định nghĩa biến trong Node-RED.
 Tuy nhiên, trong quá trình làm việc em vẫn gặp một số lỗi cú pháp (ví dụ: “Invalid property expression”) và phải tra cứu tài liệu, thử nghiệm nhiều lần để tìm ra nguyên nhân. Nhờ đó, em rút ra được kinh nghiệm quý báu trong việc kiểm tra luồng dữ liệu, theo dõi log, và xử lý lỗi cẩn thận hơn.
 
